@@ -8,3 +8,4 @@ gem 'bootsnap', require: false
 gem 'rdoc'
 gem 'sqlite3'
 gem 'puma'
+gem 'httparty'

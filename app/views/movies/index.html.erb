@@ -1,0 +1,18 @@
+<h1>Filmes</h1>
+
+<% if @movies.present? %>
+  <ul>
+    <% @movies.each do |movie| %>
+      <li><%= movie.title %></li>
+    <% end %>
+  </ul>
+<% else %>
+  <p>Nenhum filme encontrado.</p>
+<% end %>
+
+<%= link_to 'Buscar Filmes', search_movies_movies_path %>
+
+<%= form_tag search_movies_movies_path, method: :get do %>
+  <%= text_field_tag :q, params[:q] %>
+  <%= submit_tag "Buscar" %>
+<% end %>
