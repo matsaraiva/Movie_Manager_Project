@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'mongoid', '~> 8.0'
-gem 'rails', '~> 8.0.1' # Isso é crucial!
+gem 'rails', '~> 8.0.2' # Isso é crucial!
 gem 'bson_ext'
 gem 'concurrent-ruby', '1.3.4'
 gem 'bootsnap', require: false
